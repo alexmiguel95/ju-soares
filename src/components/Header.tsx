@@ -26,7 +26,7 @@ const Header = () => {
                             </ul>
                         </nav>
                     </StyledMenu>
-                ): (
+                ) : (
                     <StyledContainerMenuHamburguer>
                         <MenuRoundedIcon onClick={() => setIsOpenDropdown(!isOpenDropdown)} />
                         {isOpenDropdown && (
@@ -41,7 +41,7 @@ const Header = () => {
                             </StyledMenuDropdown>
                         )}
                     </StyledContainerMenuHamburguer>
-                )}  
+                )}
             </StyledContainer>
         </StyledContainerMain>
     );
@@ -49,8 +49,8 @@ const Header = () => {
 
 const StyledContainerMain = styled.header`
     position: relative;
-    height: 130px;
-    background: ${({ theme }) => theme.colors.background};
+    height: 155px;
+    background: #fff;
 `;
 
 const StyledContainer = styled.div`
@@ -62,11 +62,11 @@ const StyledContainer = styled.div`
 `;
 
 const StyledLogo = styled.figure`
-    width: 250px;
+    width: 300px;
     margin: 0;
 
     img {
-        width: 250px;
+        width: 300px;
     }
 `;
 
@@ -91,6 +91,10 @@ const StyledMenu = styled.div`
     li {
         cursor: pointer;
         margin-left: 65px;
+
+        &:hover {
+            color: ${({ theme }) => theme.colors.primary}
+        }
     }
 `;
 

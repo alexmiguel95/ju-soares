@@ -3,6 +3,12 @@
         "optionOne": "Sobre",
         "optionTwo": "Serviços",
         "optionThree": "Contato"
+    },
+    "pages": {
+        "home": {
+            "textOne": "Sua empresa cresce mais rápido se você <0>{{textStyle}}</0> mais clientes.",
+            "textTwo": "Empreendedor, você tem dificuldade em alguma dessas situações?"
+        }
     }
 }
  
