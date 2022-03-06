@@ -1,7 +1,13 @@
+import { ThemeProvider } from 'styled-components';
+import Routes from './routes/Routes';
+import theme from './theme/theme';
+import './i18n/i18n';
+
 function App() {
   return (
-    <div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
   );
 }
 
